@@ -1,0 +1,51 @@
+{
+  "name": "install-with-types",
+  "version": "0.0.0",
+  "description": "- https://github.com/enquirer/enquirer - https://github.com/shelljs/shelljs - https://github.com/tj/commander.js - https://github.com/yargs/yargs",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc --watch",
+    "build": "tsc",
+    "check": "tsc --noEmit",
+    "test": "jest",
+    "commit": "git-cz",
+    "precommit": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyankatsu0105/install-with-types.git"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.md": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tyankatsu0105/install-with-types/issues"
+  },
+  "homepage": "https://github.com/tyankatsu0105/install-with-types#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.24",
+    "@types/node": "^13.1.0",
+    "@typescript-eslint/eslint-plugin": "^2.13.0",
+    "@typescript-eslint/parser": "^2.13.0",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.8.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^24.9.0",
+    "lint-staged": "^9.5.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.4"
+  }
+}
