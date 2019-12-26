@@ -37,6 +37,7 @@
   "devDependencies": {
     "@types/jest": "^24.0.24",
     "@types/node": "^13.1.0",
+    "@types/shelljs": "^0.8.6",
     "@typescript-eslint/eslint-plugin": "^2.13.0",
     "@typescript-eslint/parser": "^2.13.0",
     "commitizen": "^4.0.3",
@@ -49,5 +50,9 @@
     "prettier": "^1.19.1",
     "ts-jest": "^24.2.0",
     "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "shelljs": "^0.8.3",
+    "yargs": "^15.0.2"
   }
 }
