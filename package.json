@@ -2,36 +2,38 @@
   "name": "install-with-types",
   "version": "0.0.0",
   "description": "- https://github.com/enquirer/enquirer - https://github.com/shelljs/shelljs - https://github.com/tj/commander.js - https://github.com/yargs/yargs",
-  "main": "index.js",
-  "scripts": {
-    "watch": "tsc --watch",
-    "build": "tsc",
-    "check": "tsc --noEmit",
-    "test": "jest",
-    "commit": "git-cz",
-    "precommit": "lint-staged"
+  "keywords": [],
+  "homepage": "https://github.com/tyankatsu0105/install-with-types#readme",
+  "bugs": {
+    "url": "https://github.com/tyankatsu0105/install-with-types/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tyankatsu0105/install-with-types.git"
   },
+  "license": "MIT",
+  "author": "",
+  "bin": {
+    "install-with-types": "./dist/bin/install-with-types.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "check": "tsc --noEmit",
+    "precommit": "lint-staged",
+    "commit": "git-cz",
+    "test": "jest",
+    "watch": "tsc --watch"
+  },
   "lint-staged": {
-    "*.ts": [
-      "eslint --fix",
-      "git add"
-    ],
     "*.md": [
       "prettier --write",
       "git add"
+    ],
+    "*.ts": [
+      "eslint --fix",
+      "git add"
     ]
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/tyankatsu0105/install-with-types/issues"
-  },
-  "homepage": "https://github.com/tyankatsu0105/install-with-types#readme",
   "devDependencies": {
     "@types/jest": "^24.0.24",
     "@types/node": "^13.1.0",
