@@ -3,6 +3,14 @@
 - https://github.com/tj/commander.js
 - https://github.com/yargs/yargs
 
+# roadmap
+
+```bash
+$ install-with-types shelljs
+# or
+$ install-with-types shelljs -d
+```
+
 # dev
 
 ```bash
