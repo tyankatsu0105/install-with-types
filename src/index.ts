@@ -1,13 +1,20 @@
-// import { getPackageManager } from './lib';
+import { getPackageManager } from './lib';
 
-// console.log(getPackageManager(process.env.npm_config_user_agent));
+console.log(getPackageManager(process.env.npm_config_user_agent));
 
 import program from 'commander';
 
 program
   .name('install-with-types')
   .usage('<pkg> [options]')
-  .option('-D, --save-dev', 'save dev')
-  .parse(process.argv);
+  .option('-D, --save-dev', 'save dev');
 
-if (program['saveDev']) console.log('you use -D option');
+program.on('--help', () => {
+  console.log('');
+  console.log('Examples:');
+  console.log('  $ install-with-types shelljs -D');
+});
+
+program.parse(process.argv);
+
+console.log(program);
