@@ -52,6 +52,7 @@
     "typescript": "^3.7.4"
   },
   "dependencies": {
+    "commander": "^4.0.1",
     "shelljs": "^0.8.3",
     "yargs": "^15.0.2"
   }
