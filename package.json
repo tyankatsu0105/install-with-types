@@ -36,6 +36,9 @@
       "git add"
     ]
   },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@types/jest": "^24.0.24",
     "@types/listr": "^0.14.2",
