@@ -1,21 +1,19 @@
-- https://github.com/enquirer/enquirer
-- https://github.com/shelljs/shelljs
-- https://github.com/tj/commander.js
-- https://github.com/yargs/yargs
+# install with types
 
-# roadmap
+Install dependency. Then if could find types from @types, install types.
 
-```bash
-$ install-with-types shelljs
-# or
-$ install-with-types shelljs -d
-```
-
-# dev
+## Usage
 
 ```bash
-$ npm link
-$ cd development
-$ echo '{"scripts":{"iwt": "install-with-types"}}' > package.json
-$ npm link install-with-types
+npm install install-with-types
 ```
+
+```bash
+npm run install-with-types react
+```
+
+## Options
+
+### `--save-dev` or `-D`
+
+Install dependency into devDependencies.
