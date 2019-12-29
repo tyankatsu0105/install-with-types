@@ -1,6 +1,6 @@
 {
   "name": "install-with-types",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Install dependency with types",
   "keywords": [],
   "homepage": "https://github.com/tyankatsu0105/install-with-types#readme",
@@ -27,8 +27,14 @@
     "release:trigger": "shipjs trigger"
   },
   "lint-staged": {
-    "*.md": ["prettier --write", "git add"],
-    "*.ts": ["eslint --fix", "git add"]
+    "*.md": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.ts": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "devDependencies": {
     "@types/jest": "^24.0.24",
