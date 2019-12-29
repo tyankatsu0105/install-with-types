@@ -1,1 +1,1 @@
-module.exports = { mergeStrategy: { toReleaseBranch: { master: 'release' } } };
+module.exports = { mergeStrategy: { toReleaseBranch: { develop: 'master' } } };
